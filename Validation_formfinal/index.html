@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="login">User Login</h1>
+
+        <form class="Form_login" method="post" enctype="application/x-www-form-urlencoded" action="home.html" name="form" onsubmit="return validate()">
+            <div class="font">Email Id or Phone Number</div>
+            <input autocomplete="off" type="text" name="email">
+            <div id="email_error">Please enter your Email or Phone number</div>
+           
+            <div class="font2">Password</div>
+            <input type="password" name="pass">
+            <div id="pass_error">Please enter your Password</div>
+            <button >Login</button>
+            <script src="./app.js">
+            </script>
+
+            <!-- <button id="myBtn">Login</button> -->
+            <!-- <script>
+            document.getElementById("myBtn").addEventListener("click", myFunction);
+            function myFunction() {
+            window.location.href="./home.html";
+            }
+            </script> -->
+            <!-- <a href="./home.html"class="login">Login</a> -->
+            <!-- <button id="btn" onclick="myFunction()"> Login</button> -->
+            
+        </form>
+    </div>
+    
+</body>
+</html>
